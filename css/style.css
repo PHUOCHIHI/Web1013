@@ -1,0 +1,158 @@
+/* ========== Reset + Biến màu ========== */
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --primary:#007bb5;--primary-light:#00a0e3;--accent:#e67e22;
+  --text:#333;--muted:#666;--bg:#f2f2f2;--card:#fff
+}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1300px;margin:0 auto;padding:0 12px}
+
+/* ========== Header ========== */
+.topbar{background:#fff;border-bottom:4px solid #34aadc}
+.header-wrap{display:flex;align-items:center;gap:16px;padding:10px 0}
+.logo img{width:64px;height:64px;object-fit:cover;border-radius:50%}
+.title h1{font-size:20px;color:#0b81b8}
+.title p{font-size:13px;color:var(--muted)}
+
+/* ========== Banner ========== */
+.banner{width:100%;height:250px;overflow:hidden}
+.banner img{width:100%;height:100%;object-fit:cover}
+
+/* ========== Menu ========== */
+.main-nav{background:linear-gradient(to right,var(--primary-light),var(--primary))}
+.main-nav ul{display:flex;justify-content:center;flex-wrap:wrap;list-style:none}
+.main-nav a{display:block;padding:15px 20px;color:#fff;font-weight:bold;text-decoration:none;transition:.3s}
+.main-nav a:hover{background:#005f8a}
+
+/* ========== Khẩu hiệu ========== */
+.hero{text-align:center;padding:14px 0}
+.hero h2{display:inline-block;padding:10px 16px;background:#fff6d5;color:#d35400;border:1px solid #f1d18a;border-radius:4px}
+
+/* ========== Main 2 cột ========== */
+.main-container{display:flex;margin:30px auto;gap:10px;align-items:flex-start;justify-content:space-between}
+.left-col{flex:0 0 64%;display:flex;flex-direction:column;gap:20px}
+.right-col{flex:0 0 36%;display:flex;flex-direction:column;gap:20px}
+.box{background:var(--card);padding:15px;margin-bottom:20px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.box h2{margin-bottom:10px;color:var(--primary)}
+
+/* ========== Card + List ========== */
+.highlight .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:#fafafa;border:1px solid #eee;border-radius:6px;overflow:hidden}
+.card img{width:100%;height:120px;object-fit:cover}
+.card-body{padding:10px}
+.card-body h3{font-size:16px;margin-bottom:6px}
+.list{list-style:none}
+.list li{padding:8px 0;border-bottom:1px dashed #e0e0e0}
+.list a{color:var(--text);text-decoration:none}
+.list a:hover{color:var(--primary)}
+
+/* ========== Link + Mini Link ========== */
+.link-grid,.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.link-tile,.mini-tile{
+  display:block;text-align:center;font-weight:bold;text-decoration:none;
+  border-radius:6px;background:#eaf7ff;border:1px solid #bfe6ff;color:var(--primary)
+}
+.link-tile{padding:14px}
+.mini-tile{padding:12px}
+.link-tile:hover,.mini-tile:hover{background:#d8f0ff}
+
+/* ========== Ảnh + Video ========== */
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery-grid img,.video-box img{
+  width:100%;object-fit:cover;border-radius:6px;border:1px solid #eee
+}
+.gallery-grid img{height:120px}
+.video-box img{height:170px}
+
+/* ========== Giới thiệu + Footer + Liên hệ ========== */
+.intro {
+  margin: 30px auto;        /* căn giữa toàn cụm */
+  display: flex;
+  justify-content: center;  /* đưa box ra giữa */
+  gap: 20px;
+  max-width: 1000px;        /* giới hạn độ rộng */
+}
+
+.intro-box {
+  flex: 1 1 0;
+  max-width: 300px;         /* box không quá to */
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+footer{margin-top:30px;background:var(--primary);color:#fff;text-align:center;padding:15px}
+.contact{margin:30px auto;background:var(--card);padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+.contact h2{color:var(--primary);margin-bottom:10px}
+.contact ul{list-style:none}
+.contact li{padding:6px 0}
+.contact a{color:var(--primary);text-decoration:none}
+.contact a:hover{text-decoration:underline}
+
+
+/*GIOITHIEU TRUONG TIEU LA*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.article-title {
+  font-size: 24px;
+  color: #1976d2;
+  margin-bottom: 5px;
+}
+
+.article-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.article-heading {
+  font-size: 20px;
+  color: #d32f2f;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.article-heading span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.article-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.article-image img {
+  max-width: 100%;
+  border: 3px solid #ff0; /* viền vàng */
+  padding: 5px;
+}
+
+.img-caption {
+  font-size: 13px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.article-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
